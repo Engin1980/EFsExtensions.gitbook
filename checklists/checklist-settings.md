@@ -10,7 +10,7 @@ Checklist Settings contains following sections:
 
 Synthetizer is used to generate Checklist speeches if required.
 
-See [Shared/Synthetizer Settings](shared/synthetizer-settings.md).
+See [Shared/Synthetizer Settings](../shared/synthetizer-settings.md).
 
 ## Key Shortcuts
 

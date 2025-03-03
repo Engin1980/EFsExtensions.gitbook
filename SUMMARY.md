@@ -11,11 +11,8 @@
 
 * [Checklist Overview](checklists/checklist-overview.md)
 * [Checklist Init](checklists/checklist-init.md)
-
-***
-
-* [Checklist Settings](checklist-settings.md)
-* [Checklist XML File](checklist-xml-file.md)
+* [Checklist Settings](checklists/checklist-settings.md)
+* [Checklist XML File](checklists/checklist-xml-file.md)
 
 ## Copilot Speeches
 
@@ -37,4 +34,6 @@
 
 ## Shared
 
+* [XML Meta Information](shared/xml-meta-information.md)
+* [FS SimVar Explanation](shared/fs-simvar-explanation.md)
 * [Synthetizer Settings](shared/synthetizer-settings.md)
