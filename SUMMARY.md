@@ -10,11 +10,12 @@
 ## Checklists
 
 * [Checklist Overview](checklists/checklist-overview.md)
-* [Cheklist Init](checklists/cheklist-init.md)
+* [Checklist Init](checklists/checklist-init.md)
 
 ***
 
 * [Checklist Settings](checklist-settings.md)
+* [Checklist XML File](checklist-xml-file.md)
 
 ## Copilot Speeches
 
