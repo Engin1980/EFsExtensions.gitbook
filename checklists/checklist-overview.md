@@ -22,3 +22,10 @@ Checklists are typically invoked with respect to specific task, like (but not li
 In the app, the checklists are defined in the XML file. Every file can contain several checklists. Every checklist consists of several check items, where every item has its label/description (like "Landing gear") and the confirmation ("down/checked/off/...").
 
 In FS2020 and this App, checklists can be invoked manually (from the App or by pressing a keyboard shortcut) or automatically (based on plane conditions - like climbing, landing light on, or others).
+
+## What now?
+
+* I need to know, how to initialize and load the checklist - go to [Checklist Init](checklist-init.md).
+* I need to know how to manage checklist during the flights -> go to [Checklist Run](checklist-run.md).
+* I need to know, how to set generic settings for the whole Checklist module -> go to [Checklist Settings](checklist-settings.md).
+* I'd like to create my own, or change existing checklist -> go to [Checklist XML File](checklist-xml-file.md).
