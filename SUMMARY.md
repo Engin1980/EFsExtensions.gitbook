@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Chlaot - Introduction](README.md)
+* [EFS-Extensions](README.md)
 
 ## Checklists
 
