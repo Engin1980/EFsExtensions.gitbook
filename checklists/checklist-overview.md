@@ -25,7 +25,7 @@ In FS2020 and this App, checklists can be invoked manually (from the App or by p
 
 ## What now?
 
-* I need to know, how to initialize and load the checklist - go to [Checklist Init](checklist-init.md).
+* I need to know how to initialize and load the checklist - go to [Checklist Init](checklist-init.md).
 * I need to know how to manage checklist during the flights -> go to [Checklist Run](checklist-run.md).
-* I need to know, how to set generic settings for the whole Checklist module -> go to [Checklist Settings](checklist-settings.md).
-* I'd like to create my own, or change existing checklist -> go to [Checklist XML File](checklist-xml-file.md).
+* I need to know how to set generic settings for the whole Checklist module -> go to [Checklist Settings](checklist-settings.md).
+* I'd like to create my own or change existing checklist -> go to [Checklist XML File](checklist-xml-file.md).
