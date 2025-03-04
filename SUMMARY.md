@@ -33,6 +33,11 @@
 * [RaaS Init](raas/raas-init.md)
 * [RaaS Settings](raas/raas-settings.md)
 
+## Evaluations
+
+* [Evaluations Overview](evaluations/evaluations-overview.md)
+* [G:Properties](evaluations/g-properties.md)
+
 ## Shared
 
 * [XML Meta Information](shared/xml-meta-information.md)
