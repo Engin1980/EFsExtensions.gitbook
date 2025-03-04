@@ -130,21 +130,18 @@ The checklist xml-element has following xml attributes:
 
 <table><thead><tr><th width="174">Name</th><th width="132">Domain</th><th>Description</th></tr></thead><tbody><tr><td>id</td><td>Text</td><td>Mandatory. Defines the "id" of the checklist used for referencing later. Also, if "callSpeech" is not defined, us used as the checklist call speech (see below).</td></tr><tr><td>callSpeech</td><td>Text</td><td>Optional. Used as a callout of checklist name. Can be used, if the "id" is shortened. E.g., id=lnup, callSpeech=line up. If not used, "id" is taken.</td></tr><tr><td>nextChecklistIds</td><td>Text;Text;...</td><td>Optional. Used to define, which checklist(s) follow(s) after this one. Multiple can be selected, the the first one is default (e.g., after approach, there can be landing or go-around). If not defined, the following checklist in the XML file is taken. If not defined and is the last, the first checklist is taken as the next one.</td></tr></tbody></table>
 
-The checklist xml-element has following xml elements:
-
-<table><thead><tr><th width="265">Attribute Name</th><th>Description</th></tr></thead><tbody><tr><td>items</td><td>Mandatory. Contain checklist items as a sequence of "item" xml-element(s).</td></tr><tr><td>variables</td><td>Optional. Contains checklist variables a sequence of "variable" xml element(s).</td></tr><tr><td>trigger</td><td>Optional. Defining automated checklist trigger. Once the checklist is the current one and the trigger is true, the checklist will be automatically started.</td></tr><tr><td>customEntrySpeech</td><td>Optional. Custom speech used at the beginning of the checklist.</td></tr><tr><td>customExitSpeech</td><td>Optional. Custom speech used at the end of the checklist.</td></tr><tr><td>customPausedAlertSpeech</td><td>Optional. Custom speech used as a remined after predefined interval if the checklist was paused.</td></tr></tbody></table>
-
 The elements in this element are:
 
 * `<items>` - containing several:
   * `<item>` - containing a pair of:
-    * `<call>` - used to define checklist item label
-    * `<confirmation>` - used to define checklist item confirmation
+    * `<call>` - used to define checklist item label of type [g:Speech](../shared/g-speech.md).
+    * `<confirmation>` - used to define checklist item confirmation of type [g:Speech](../shared/g-speech.md).
 * `<variables>`  - containing several:
-  * `<variable>` - defining custom checklist variables
-* `<trigger>` - defining automatic trigger causing checklist being read, containing a single g:condition.
-
-### Call & Confirmation
+  * `<variable>` - defining [custom checklist variables](../evaluations/g-variables.md)
+* `<trigger>` - Optional. Defining automated checklist trigger. Once the checklist is the current one and the trigger is true, the checklist will be automatically started. If present, contains a single [g:condition](../evaluations/g-condition.md).
+* `<customEntrySpeech>` - Optional, of type [g:Speech](../shared/g-speech.md). Custom speech used at the beginning of the checklist.
+* `<customExitSpeech>` - Optional, of type [g:Speech](../shared/g-speech.md). Custom speech used at the end of the checklist.
+* `<customPausedAlertSpeech>` - Optional, of type [g:Speech](../shared/g-speech.md). Custom speech used as a remined after predefined interval if the checklist was paused.
 
 ## Examples
 

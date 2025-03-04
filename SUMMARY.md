@@ -41,3 +41,4 @@
 * [XML Meta Information](shared/xml-meta-information.md)
 * [FS SimVar Explanation](shared/fs-simvar-explanation.md)
 * [Synthetizer Settings](shared/synthetizer-settings.md)
+* [g:Speech](shared/g-speech.md)
