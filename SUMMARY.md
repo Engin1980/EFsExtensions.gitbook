@@ -1,11 +1,6 @@
 # Table of contents
 
 * [Chlaot - Introduction](README.md)
-* [Usage description](usage-description.md)
-* [Customizations](customizations/README.md)
-  * [XML and XSD - Brief Explanation](customizations/xml-and-xsd-brief-explanation.md)
-  * [Checklists](customizations/checklists.md)
-  * [Shared items](customizations/shared-items.md)
 
 ## Checklists
 
@@ -42,6 +37,7 @@
 
 ## Shared
 
+* [XML and XSD Files](shared/xml-and-xsd-brief-explanation.md)
 * [XML Meta Information](shared/xml-meta-information.md)
 * [FS SimVar Explanation](shared/fs-simvar-explanation.md)
 * [Synthetizer Settings](shared/synthetizer-settings.md)
