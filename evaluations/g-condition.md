@@ -199,6 +199,10 @@ This example returns `false` for 5 seconds. Then, returns `true` if airplane ind
 
 ### g:property
 
+{% hint style="warning" %}
+Note that [property declaration](g-property.md) also uses `g:property`. But in [property declaration](g-property.md), `g:property` refers to the **FS property declaration.** Here, by `g:property` we refer to the **property-based condition**.
+{% endhint %}
+
 This condition is evaluated with respect to the airplane's current status. It is linked to the airplane property and its value.
 
 The syntax is:
