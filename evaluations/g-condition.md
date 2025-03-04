@@ -149,7 +149,7 @@ The syntax is:
 </g:for>
 ```
 
-... where `delay` attribute defines integer positive value representing the number of attempts (=seconds) how many times the nested condition must be true to return `true`.
+... where `seconds` attribute defines integer positive value representing the number of attempts (=seconds) how many times the nested condition must be true to return `true`.
 
 An example:
 
@@ -160,4 +160,32 @@ An example:
 ```
 
 This condition returns `true` if airlane's ground speed is above 15 kts for 10 seconds in the sequence.
+
+### g:wait
+
+This condition pauses the evaluation of the nested condition for the predefined amount of seconds.  Before the interval is expired, returns `false`. When the interval is expired, returns the value of the nested condition.
+
+The condition is used to suppress the evaluation for preset amount of seconds.
+
+The syntax is:
+
+```xml
+<g:wait seconds="5">
+  <g:... exactly one nested mandatory condition />
+</g:wait>
+```
+
+... where `seconds` attribute represents the number of seconds to ignore the nested condition and return `false`. After that, the nested condition result is returned.
+
+An example:
+
+```xml
+<g:wait seconds="5">
+  <g:property name="ias" direction="above" expression="40" />
+</g:wait>
+```
+
+This example returns `false` for 5 seconds. Then, returns `true` if airplane indicated speed is above 40 knots, `false` otherwise.
+
+### g:property
 
