@@ -37,6 +37,7 @@
 
 * [Evaluations Overview](evaluations/evaluations-overview.md)
 * [g:Variables](evaluations/g-variables.md)
+* [g:Property](evaluations/g-property.md)
 * [g:Condition](evaluations/g-condition.md)
 
 ## Shared
