@@ -158,8 +158,6 @@ An example of an empty checklist file follows:
 </checklistSet>
 ```
 
-
-
 Checklist file contains of an expected content:
 
 ```xml
@@ -169,13 +167,14 @@ Checklist file contains of an expected content:
   xmlns="http://chlaot.org/checklists.xsd"
   xmlns:g="http://chlaot.org/global.xsd"
   xsi:noNamespaceSchemaLocation="file://./Xsds/ChecklistSchema.xsd"
-  firstChecklistId="batteryOn">
+  firstChecklistId="beforeStart">
   <meta>
-    ...
+    <g:label>Shortened Demo C172 checklist</g:label>
+    <g:author>Marek Vajgl</g:author>
+    <g:description>Shortened demo checklists C172 default plane</g:description>
   </meta>
-  <properties title="FBW Properties">
-    <g:property name="fbwParkingBrake" simVar="L:A32NX_PARK_BRAKE_LEVER_POS"/>
-    ...
+  <properties title="My Joy Settings">
+    <g:property name="joyBtnA" simVar="L:JOY_BTN_A_STATE"/>
   </properties>
   <checklist id="beforeStart" callSpeech="Before Start-up">
     <items>
@@ -184,21 +183,53 @@ Checklist file contains of an expected content:
         <confirmation type="speech" value="Set"/>
       </item>
       <item>
-        ...
+        <call type="speech" value="Avionics"/>
+        <confirmation type="speech" value="Off"/>
       </item>
-      ...
     </items>
     <trigger>
+      <g:property name="beaconLight" direction="passingUp" expression="0.5"/>
+    </trigger>
+  </checklist>
+  <checklist id="beforeTaxi" callSpeech="Before Taxi">
+    <items>
+      <item>
+        <call type="speech" value="Alternator Switch"/>
+        <confirmation type="speech" value="On"/>
+      </item>
+      <item>
+        <call type="speech" value="Voltmeter"/>
+        <confirmation type="speech" value="28 volts at least"/>
+      </item>
+    </items>
+    <variables>
+      <g:randomVariable name="delay" minimum="3" maximum="8" isInteger="true"/>
+    </variables>
+    <trigger>
       <g:and>
-        <g:property name="fbwParkingBrake" direction="above" expression="0" />
-        ...
+        <g:property name="pushbackTugConnected" direction="below" expression="1" />
+        <g:property name="engine1Running" direction="above" expression="0"/>
+        <g:for seconds="{delay}">
+          <g:property name="parkingBrakeSet" direction="below" expression="1"/>
+        </g:for>
       </g:and>
     </trigger>
   </checklist>
-  <checklist id="inTaxi" callSpeech="In Taxi">
-    ...
+  <checklist id="beforeTakeoff" callSpeech="Before Take Off">
+    <items>
+      <item>
+        <call type="speech" value="Mixture"/>
+        <confirmation type="speech" value="Set"/>
+      </item>
+      <item>
+        <call type="speech" value="Lights"/>
+        <confirmation type="speech" value="Checked"/>
+      </item>
+      <item>
+        <call type="speech" value="Transponder"/>
+        <confirmation type="speech" value="On"/>
+      </item>
+    </items>
   </checklist>
-  ...
 </checklistSet>
-
 ```
