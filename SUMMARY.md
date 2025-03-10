@@ -13,6 +13,10 @@
 ## Copilot Speeches
 
 * [Copilot Speeches Overview](copilot-speeches/copilot-speeches-overview.md)
+* [Copilot Speeches Init](copilot-speeches/copilot-speeches-init.md)
+* [Copilot Speeches Settings](copilot-speeches/copilot-speeches-settings.md)
+* [Copilot Speeches Run](copilot-speeches/copilot-speeches-run.md)
+* [Copilot Speeches XML File](copilot-speeches/copilot-speeches-xml-file.md)
 
 ## Failures
 
