@@ -16,7 +16,7 @@ In the app, speeches are defined in the XML file. The announcements are invoked 
 
 ## What now?
 
-* I need to know how to initialize and load the copilot speeches - go to Copilot Speeches Init.
-* I need to know how to manage copilot speeches during the flights -> Copilot Speeches Run.
-* I need to know how to set generic settings for the whole copilot speeches module -> go to Copilot Speeches Settings.
-* I'd like to create my own or change existing copilot speeches -> go to Copilot Speeches XML File.
+* I need to know how to initialize and load the copilot speeches - go to [Copilot Speeches Init](copilot-speeches-init.md).
+* I need to know how to manage copilot speeches during the flights -> [Copilot Speeches Run](copilot-speeches-run.md).
+* I need to know how to set generic settings for the whole copilot speeches module -> go to [Copilot Speeches Settings](copilot-speeches-settings.md).
+* I'd like to create my own or change existing copilot speeches -> go to [Copilot Speeches XML File](copilot-speeches-xml-file.md).
